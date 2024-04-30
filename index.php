@@ -33,8 +33,7 @@ curl_close($ch);
     <h1>When is the next Marvel film?</h1>
     <hgroup>
         <h2><?= $data["title"]; ?></h2>
-        <p>Release date: <?= $data["release_date"];
-                            $data["days_until"]; ?> days left </p>
+        <p>Release date: <?= $data["release_date"]; ?>, <?= $data["days_until"]; ?> days left </p>
         <p>Afterwards production: <?= $data["following_production"]["title"] ?></p>
     </hgroup>
     <p><?= $data["overview"] ?></p>
